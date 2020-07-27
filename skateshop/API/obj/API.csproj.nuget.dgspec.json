@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skinet/API/API.csproj": {}
+    "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/API.csproj": {}
   },
   "projects": {
-    "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skinet/API/API.csproj": {
+    "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skinet/API/API.csproj",
+        "projectUniqueName": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skinet/API/API.csproj",
+        "projectPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/API.csproj",
         "packagesPath": "/Users/aaronromero/.nuget/packages/",
-        "outputPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skinet/API/obj/",
+        "outputPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
