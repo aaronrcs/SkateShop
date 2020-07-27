@@ -1,5 +1,4 @@
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/appsettings.Development.json
-/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/API
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/API.deps.json
@@ -43,3 +42,7 @@
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Core.dll
+/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Infrastructure.dll
+/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Infrastructure.pdb
+/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Core.pdb
