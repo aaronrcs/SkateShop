@@ -46,3 +46,4 @@
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Infrastructure.dll
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Infrastructure.pdb
 /Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/Core.pdb
+/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/bin/Debug/netcoreapp3.1/appsettings.json
