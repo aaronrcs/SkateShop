@@ -18,7 +18,7 @@ namespace Infrastructure.Data
                 if(!context.ProductBrands.Any())
                 {
                     var brandsData = 
-                        File.ReadAllText("/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/Infrastructure/Data/SeedData/brands.json");
+                        File.ReadAllText("/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/Infrastructure/Data/SeedData/brands.json");
 
                     var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
 
@@ -32,7 +32,7 @@ namespace Infrastructure.Data
                 if(!context.ProductTypes.Any())
                 {
                     var typesData = 
-                        File.ReadAllText("/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/Infrastructure/Data/SeedData/types.json");
+                        File.ReadAllText("/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/Infrastructure/Data/SeedData/types.json");
 
                     var types = JsonSerializer.Deserialize<List<ProductType>>(typesData);
 
@@ -46,7 +46,7 @@ namespace Infrastructure.Data
                 if(!context.Products.Any())
                 {
                     var productData = 
-                        File.ReadAllText("/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/Infrastructure/Data/SeedData/products.json");
+                        File.ReadAllText("/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/Infrastructure/Data/SeedData/products.json");
 
                     var products = JsonSerializer.Deserialize<List<Product>>(productData);
 

@@ -1183,11 +1183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/API.csproj",
+      "projectUniqueName": "/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/API.csproj",
+      "projectPath": "/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/API.csproj",
       "packagesPath": "/Users/aaronromero/.nuget/packages/",
-      "outputPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/API/obj/",
+      "outputPath": "/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -1204,8 +1204,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/Users/aaronromero/Desktop/Angular_Projects/E-CommerceApp/skateshop/Infrastructure/Infrastructure.csproj"
+            "/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/Infrastructure/Infrastructure.csproj"
             }
           }
         }
