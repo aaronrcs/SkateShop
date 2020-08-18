@@ -7,6 +7,7 @@ namespace Infrastructure.Data
 {
     public class SpecificationEvaluator<TEntity> where TEntity : BaseEntity
     {
+        // IQueryable - is suitable for querying data from out-memory (like remote database, service) collections.
         public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery,
         ISpecification<TEntity> spec)
         {
