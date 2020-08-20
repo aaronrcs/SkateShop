@@ -95,3 +95,5 @@
 /Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/obj/Debug/netcoreapp3.1/API.csproj.CopyComplete
 /Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/obj/Debug/netcoreapp3.1/API.dll
 /Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/obj/Debug/netcoreapp3.1/API.pdb
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
