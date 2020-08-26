@@ -97,3 +97,8 @@
 /Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/obj/Debug/netcoreapp3.1/API.pdb
 /Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/obj/Debug/netcoreapp3.1/API.MvcApplicationPartsAssemblyInfo.cs
+/Users/aaronromero/Desktop/Angular_Projects/SkateShop/skateshop/API/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
