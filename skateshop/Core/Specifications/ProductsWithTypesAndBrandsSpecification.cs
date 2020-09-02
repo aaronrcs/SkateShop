@@ -30,7 +30,7 @@ namespace Core.Specifications
         }
 
         /*
-            x => x.Id == id gets passed to this BaseSpecification constructor:
+            x => x.Id == id gets passed to BaseSpecification constructor:
 
             public BaseSpecification(Expression<Func<T, bool>> criteria)
             {
