@@ -6,19 +6,21 @@ namespace Core.Specifications
 {
     public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
-        public ProductsWithTypesAndBrandsSpecification(string sort, int? brandId, int? typeId)
+        // Calling the base contructor to pass in a specific Criteria to retrieve/filter out certain data
+        public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
         : base(x=> 
-            (!brandId.HasValue || x.ProductBrandId == brandId) &&
-            (!typeId.HasValue || x.ProductTypeId == typeId)
+            (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
+            (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
         )
         {
             AddInclude(x => x.ProductType);
             AddInclude(x => x.ProductBrand);
             AddOrderBy(x => x.Name);
+            ApplyPaging(productParams.PageSize * (productParams.PageIndex - 1), productParams.PageSize);
 
-            if (!string.IsNullOrEmpty(sort))
+            if (!string.IsNullOrEmpty(productParams.SortingQuery))
             {
-                switch (sort)
+                switch (productParams.SortingQuery)
                 {
                     case "priceAsc":
                         AddOrderBy(p => p.Price);
@@ -34,7 +36,8 @@ namespace Core.Specifications
         }
 
         /*
-            x => x.Id == id gets passed to BaseSpecification constructor:
+            x => x.Id == id gets passed to BaseSpecification constructor
+            as a specific Criteria:
 
             public BaseSpecification(Expression<Func<T, bool>> criteria)
             {

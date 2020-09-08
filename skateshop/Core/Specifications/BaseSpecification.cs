@@ -9,13 +9,16 @@ namespace Core.Specifications
         public BaseSpecification()
         {
         }
-
         public BaseSpecification(Expression<Func<T, bool>> criteria)
         {
             Criteria = criteria;
-            
         }
 
+        public int Take {get; private set;}
+
+        public int Skip {get; private set;}
+
+        public bool IsPagingEnabled {get; private set;}
         public Expression<Func<T, bool>> Criteria {get; }
 
         public List<Expression<Func<T, object>>> Includes {get; } =
@@ -31,14 +34,22 @@ namespace Core.Specifications
             Includes.Add(includeExpression);
         }
 
+        // This method allows an OrderBy expression to be added
         protected void AddOrderBy(Expression<Func<T, object>> orderByExpression)
         {
             OrderBy = orderByExpression;
         }
-
+        // This method allows an OrderByDescending expression to be added
         protected void AddOrderByDescending(Expression<Func<T, object>> orderByDescExpression)
         {
             OrderByDescending = orderByDescExpression;
+        }
+
+        protected void ApplyPaging(int skip, int take)
+        {
+            Skip = skip;
+            Take = take;
+            IsPagingEnabled = true;
         }
 
     }

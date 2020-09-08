@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Infrastructure.Data;
 using Core.Models;
 using Core.Interfaces;
 using Core.Specifications;
@@ -35,10 +32,13 @@ namespace API.Controllers
 
         // api/products
         [HttpGet]
+
+        // Used [FromQuery] to tell the controller to use query string
+        // Also, a body is not present when using an HttpGet request
         public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(
-            string sortingQuery, int? brandId, int? typeId)
+            [FromQuery]ProductSpecParams productParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification(sortingQuery, brandId, typeId);
+            var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
 
             var products = await _productsRepo.ListAsync(spec);
 
