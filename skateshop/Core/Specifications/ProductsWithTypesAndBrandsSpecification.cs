@@ -9,6 +9,7 @@ namespace Core.Specifications
         // Calling the base contructor to pass in a specific Criteria to retrieve/filter out certain data
         public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
         : base(x=> 
+            (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
             (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
             (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
         )
