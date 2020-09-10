@@ -1,2 +1,2 @@
-# E-CommerceApp
-Online store that will beat Amazon one day...
+# SkateShop
+An e-commerce application that sells skateboarding related products.
