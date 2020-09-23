@@ -11,8 +11,6 @@ import { IProduct } from './shared/models/product';
 })
 export class AppComponent implements OnInit {
 
-  title = 'Skateshop';
-
   constructor() {}
 
   ngOnInit(): void {}
