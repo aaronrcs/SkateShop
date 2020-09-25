@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { IProduct } from '../shared/models/product';
 
 // tslint:disable-next-line: jsdoc-format
-/**Purpose of this Component is to handle Sorting, Pagination, Search functionality*/
+/** Purpose of this Component is to handle Sorting, Pagination, Search functionality */
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
@@ -15,6 +15,8 @@ export class ShopComponent implements OnInit {
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
+  brandIdSelected = 0;
+  typeIdSelected = 0;
 
   constructor(private shopService: ShopService) { }
 
@@ -25,7 +27,7 @@ export class ShopComponent implements OnInit {
   }
 
   getProducts() {
-    this.shopService.getProducts().subscribe(res => {
+    this.shopService.getProducts(this.brandIdSelected, this.typeIdSelected).subscribe(res => {
       this.products = res.data;
     }, error => {
       console.log(error);
@@ -34,7 +36,7 @@ export class ShopComponent implements OnInit {
 
   getBrands() {
     this.shopService.getBrands().subscribe(res => {
-      this.brands = res;
+      this.brands = [{id: 0, name: 'All'}, ...res];
     }, error => {
       console.log(error);
     });
@@ -42,9 +44,20 @@ export class ShopComponent implements OnInit {
 
   getTypes() {
     this.shopService.getTypes().subscribe(res => {
-      this.types = res;
+      this.types = [{id: 0, name: 'All'}, ...res];
     }, error => {
       console.log(error);
     });
   }
+
+  onBrandSelected(brandId: number) {
+    this.brandIdSelected = brandId;
+    this.getProducts();
+  }
+
+  onTypeSelected(typeId: number) {
+    this.typeIdSelected = typeId;
+    this.getProducts();
+  }
+
 }
