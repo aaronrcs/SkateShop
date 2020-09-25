@@ -14,7 +14,7 @@ export class ShopService {
   constructor(private http: HttpClient) { }
 
   // getProducts: retrieves a list of available products
-  getProducts(brandId?: number, typeId?: number) {
+  getProducts(brandId?: number, typeId?: number, sort?: string) {
     let params = new HttpParams();
 
     if (brandId) {
@@ -23,6 +23,10 @@ export class ShopService {
 
     if (typeId) {
       params = params.append('typeId', typeId.toString());
+    }
+
+    if (sort) {
+      params = params.append('sortingQuery', sort);
     }
 
     return this.http.get<IPagination>(this.baseUrl + 'products', {observe: 'response', params})
