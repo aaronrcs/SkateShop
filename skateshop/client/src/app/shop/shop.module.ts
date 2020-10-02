@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,7 +12,8 @@ import { ProductInfoComponent } from './product-info/product-info.component';
   declarations: [ShopComponent, ProductItemComponent, ProductInfoComponent],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   exports: [ShopComponent]
 })
