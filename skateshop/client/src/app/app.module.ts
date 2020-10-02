@@ -1,3 +1,4 @@
+import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,7 +24,8 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     CoreModule,
     ShopModule,
-    SharedModule
+    SharedModule,
+    HomeModule
 
   ],
   providers: [],
