@@ -2,7 +2,7 @@ import { ShopParams } from './../shared/models/shopParams';
 import { IType } from './../shared/models/productType';
 import { IBrand } from './../shared/models/brand';
 import { ShopService } from './shop.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { IProduct } from '../shared/models/product';
 
 // tslint:disable-next-line: jsdoc-format
@@ -13,6 +13,9 @@ import { IProduct } from '../shared/models/product';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
+  // structual directive isnt used e.g ngIf, thus since input is standalone,
+  // static is set to 'true'
+  @ViewChild('search', {static: true}) searchTerm: ElementRef;
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
@@ -62,11 +65,13 @@ export class ShopComponent implements OnInit {
 
   onBrandSelected(brandId: number) {
     this.shopParams.brandId = brandId;
+    this.shopParams.pageNumber = 1;
     this.getProducts();
   }
 
   onTypeSelected(typeId: number) {
     this.shopParams.typeId = typeId;
+    this.shopParams.pageNumber = 1;
     this.getProducts();
   }
 
@@ -76,8 +81,21 @@ export class ShopComponent implements OnInit {
   }
 
   onPageChanged(event: any) {
-    console.log(event);
-    this.shopParams.pageNumber = event;
+    if (this.shopParams.pageNumber !== event) {
+      this.shopParams.pageNumber = event;
+      this.getProducts();
+    }
+  }
+
+  onSearch() {
+    this.shopParams.search = this.searchTerm.nativeElement.value;
+    this.shopParams.pageNumber = 1;
+    this.getProducts();
+  }
+
+  onReset() {
+    this.searchTerm.nativeElement.value = '';
+    this.shopParams = new ShopParams();
     this.getProducts();
   }
 
