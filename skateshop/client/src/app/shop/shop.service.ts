@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { IPagination } from '../shared/models/pagination';
 import { map } from 'rxjs/operators';
+import { IProduct } from '../shared/models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -14,10 +15,11 @@ export class ShopService {
 
   constructor(private http: HttpClient) { }
 
-  // getProducts: retrieves a list of available products
+  // getProducts: retrieves a list of all available products
   getProducts(shopParams: ShopParams) {
     let params = new HttpParams();
 
+    // Appending HttpParams back to our API for various filtering/sorting options
     if (shopParams.brandId !== 0) {
       params = params.append('brandId', shopParams.brandId.toString());
     }
@@ -35,13 +37,19 @@ export class ShopService {
       params = params.append('pageIndex', shopParams.pageNumber.toString());
       params = params.append('pageIndex', shopParams.pageSize.toString());
 
-
+    // Sending params back to API as an 'object'
+    // Returning the a filtered or sorted list of products back to user
     return this.http.get<IPagination>(this.baseUrl + 'products', {observe: 'response', params})
       .pipe(
         map(response => {
           return response.body;
         })
       )
+  }
+
+  // getProduct: retrieves info for an individual product
+  getProduct(id: number) {
+    return this.http.get<IProduct>(this.baseUrl + 'products/' + id);
   }
 
   // getBrands: retrieves a list of available brands
