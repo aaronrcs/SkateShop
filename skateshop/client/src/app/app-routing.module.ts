@@ -7,12 +7,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'shop', component: ShopComponent},
-  {path: 'shop/:id', component: ProductInfoComponent},
+  {path: 'shop', loadChildren: () => import('./shop/shop.module').then(mod => mod.ShopModule)},
   {path: '**', redirectTo: '', pathMatch: 'full'},
-
-
-
 ];
 
 @NgModule({
