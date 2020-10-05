@@ -1,7 +1,7 @@
 [
   {
     "Name": "Green Ghost Hunter Wheels",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "50mm Ghost hunter wheels. They guarantee a balanced formula for maximum speed and a smooth roll with fewer flat spots.",
     "Price": 30,
     "PictureUrl": "images/products/wheels_gh1.png",
     "ProductTypeId": 4,
@@ -9,7 +9,7 @@
   },
   {
     "Name": "Green Happy Bruin Wheels",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Description": "54mm Happy Bruin wheels. They guarantee a balanced formula for maximum speed and a smooth roll with fewer flat spots.",
     "Price": 30,
     "PictureUrl": "images/products/wheels_hb1.png",
     "ProductTypeId": 4,
@@ -17,7 +17,7 @@
   },
   {
     "Name": "Purple Mental Giant Wheels",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "58mm Mental Giant wheels. They guarantee a balanced formula for maximum speed and a smooth roll with fewer flat spots.",
     "Price": 40,
     "PictureUrl": "images/products/wheels_mg1.png",
     "ProductTypeId": 4,
@@ -25,7 +25,7 @@
   },
   {
     "Name": "Red Mental Giant Wheels",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "55mm Mental Giant wheels. They guarantee a balanced formula for maximum speed and a smooth roll with fewer flat spots.",
     "Price": 20,
     "PictureUrl": "images/products/wheels_mg2.png",
     "ProductTypeId": 4,
@@ -33,7 +33,7 @@
   },
   {
     "Name": "Black Spacers Wheels",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "54mm Spacers wheels. They guarantee a balanced formula for maximum speed and a smooth roll with fewer flat spots.",
     "Price": 25,
     "PictureUrl": "images/products/wheels_sp1.png",
     "ProductTypeId": 4,
@@ -41,7 +41,7 @@
   },
   {
     "Name": "Blue Spacers Wheels",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Description": "52mm Spacers wheels. They guarantee a balanced formula for maximum speed and a smooth roll with fewer flat spots.",
     "Price": 35,
     "PictureUrl": "images/products/wheels_sp2.png",
     "ProductTypeId": 4,
@@ -49,7 +49,7 @@
   },
   {
     "Name": "Baby Blue Ghost Hunter Shoes",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "Ghost Hunter shoes have high durability are easy on the feet, while an abrasion-resistant toe box creates the perfect amount of grip and flick for flip tricks.",
     "Price": 100,
     "PictureUrl": "images/products/shoes_gh1.png",
     "ProductTypeId": 2,
@@ -57,7 +57,7 @@
   },
   {
     "Name": "Blue Happy Bruin Shoes",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "Happy Bruin shoes have high durability are easy on the feet, while an abrasion-resistant toe box creates the perfect amount of grip and flick for flip tricks.",
     "Price": 85,
     "PictureUrl": "images/products/shoes_hb1.png",
     "ProductTypeId": 2,
@@ -65,7 +65,7 @@
   },
   {
     "Name": "Green Happy Bruin Shoes",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "Happy Bruin shoes have high durability are easy on the feet, while an abrasion-resistant toe box creates the perfect amount of grip and flick for flip tricks.",
     "Price": 90,
     "PictureUrl": "images/products/shoes_hb2.png",
     "ProductTypeId": 2,
@@ -73,7 +73,7 @@
   },
   {
     "Name": "Black Bolt Caster Deck",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Description": "Its 8.0 inches in width and 31.5 inches in length. This is a pro-quality Bolt Caster skateboard deck constructed from traditional 7-ply maple wood.",
     "Price": 95,
     "PictureUrl": "images/products/skateboard_bc1.png",
     "ProductTypeId": 3,
@@ -81,7 +81,7 @@
   },
   {
     "Name": "Purple Bolt Caster Deck",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "Its 8.0 inches in width and 31.8 inches in length. This is a pro-quality Bolt Caster skateboard deck constructed from traditional 7-ply maple wood.",
     "Price": 80,
     "PictureUrl": "images/products/skateboard_bc2.png",
     "ProductTypeId": 3,
@@ -89,7 +89,7 @@
   },
   {
     "Name": "Blue Toy Soldier Deck",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Description": "Its 8.5 inches in width and 31.6 inches in length. This is a pro-quality Toy Soldier skateboard deck constructed from traditional 7-ply maple wood.",
     "Price": 120,
     "PictureUrl": "images/products/skateboard_ts1.png",
     "ProductTypeId": 3,
@@ -97,7 +97,7 @@
   },
   {
     "Name": "Orange Toy Soldier Deck",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "Its 8.0 inches in width and 31.8 inches in length. This is a pro-quality Toy Soldier skateboard deck constructed from traditional 7-ply maple wood.",
     "Price": 110,
     "PictureUrl": "images/products/skateboard_ts2.png",
     "ProductTypeId": 3,
@@ -105,7 +105,7 @@
   },
   {
     "Name": "Purple Mental Giant Shirt",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "This is a 100% cotton, standard fit Mential Giant T-shirt with logo screenprinted onto the front.",
     "Price": 55,
     "PictureUrl": "images/products/shirt_mg1.png",
     "ProductTypeId": 1,
@@ -113,7 +113,7 @@
   },
   {
     "Name": "Blue Spacers Shirt",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "This is a 100% cotton, standard fit Spacers T-shirt with logo screenprinted onto the front.",
     "Price": 60,
     "PictureUrl": "images/products/shirt_sp1.png",
     "ProductTypeId": 1,
@@ -121,7 +121,7 @@
   },
   {
     "Name": "Red Spacers Shirt",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "This is a 100% cotton, standard fit Spacers T-shirt with logo screenprinted onto the front.",
     "Price": 45,
     "PictureUrl": "images/products/shirt_sp2.png",
     "ProductTypeId": 1,
@@ -129,7 +129,7 @@
   },
   {
     "Name": "Black Toy Soldier Shirt",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Description": "This is a 100% cotton, standard fit Toy Soldier T-shirt with logo screenprinted onto the front.",
     "Price": 40,
     "PictureUrl": "images/products/shirt_ts1.png",
     "ProductTypeId": 1,
@@ -137,7 +137,7 @@
   },
   {
     "Name": "Orange Toy Soldier Shirt",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "This is a 100% cotton, standard fit Toy Soldier T-shirt with logo screenprinted onto the front.",
     "Price": 40,
     "PictureUrl": "images/products/shirt_ts2.png",
     "ProductTypeId": 1,
