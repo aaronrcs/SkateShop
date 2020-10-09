@@ -6,7 +6,7 @@ import { ProductInfoComponent } from './product-info/product-info.component';
 
 const routes: Routes = [
   {path: '', component: ShopComponent},
-  {path: ':id', component: ProductInfoComponent},
+  {path: ':id', component: ProductInfoComponent, data: {breadcrumb: {alias: 'productInfo'}}},
 ];
 
 // forChild: routes are only available in shop module, not in app module
