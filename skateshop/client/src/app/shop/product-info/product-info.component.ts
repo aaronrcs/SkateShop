@@ -13,7 +13,11 @@ export class ProductInfoComponent implements OnInit {
   product: IProduct;
 
   constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute,
-    private bcService: BreadcrumbService ) { }
+    private bcService: BreadcrumbService ) {
+      // Setting the Heading text to an empty string in the BreadCrumb
+      // So no product name will appear until the page contents are loaded in
+      this.bcService.set('@productInfo', ' ');
+    }
 
   ngOnInit(): void {
     this.loadProduct();

@@ -13,9 +13,10 @@ import { IProduct } from '../shared/models/product';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-  // structual directive isnt used e.g ngIf, thus since input is standalone,
-  // static is set to 'true'
-  @ViewChild('search', {static: true}) searchTerm: ElementRef;
+  // Since a structual directive is being used e.g ngIf, thus input is not standalone,
+  // thus, static is set to 'true'
+  // Able to acquire searchTerm value after products have loaded into page
+  @ViewChild('search', {static: false}) searchTerm: ElementRef;
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
