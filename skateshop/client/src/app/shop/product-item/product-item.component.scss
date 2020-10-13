@@ -14,18 +14,15 @@
 .view-button:hover {
     background-color: #737df1;
 }
-
 .btn{
     width: 30%;
     height: 40px;
 }
 
 // Styles for Product Image
-
 .product-image {
     background-color: #eadfd2;
 }
-
 
 // Styles for hovering over product image
 .hover-overlay {
@@ -39,15 +36,16 @@
     transition: all 0.5s;
 
     & button {
+        color: black;
         z-index: 1000;
         transition: all 0.5s;
     }
 
     & button:first-of-type {
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
 
     & button:last-of-type {
-        transform: translateY(20px);
+        transform: translateY(50px);
     }
 }
