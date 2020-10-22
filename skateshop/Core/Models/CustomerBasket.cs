@@ -8,6 +8,11 @@ namespace Core.Models
         {
         }
 
+        public CustomerBasket(string id)
+        {
+            Id = id;
+        }
+
         public CustomerBasket(string id, List<BasketItem> items)
         {
             Id = id;
