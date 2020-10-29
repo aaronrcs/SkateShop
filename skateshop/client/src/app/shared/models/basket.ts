@@ -18,6 +18,6 @@ export interface IBasketItem {
 // uuid - it will create a unique identifier for each item in the shopping cart
 export class Basket implements IBasket {
     id = uuidv4();
-    items: IBasketItem[];
+    items: IBasketItem[] = [];
 
 }
