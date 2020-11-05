@@ -15,9 +15,15 @@ export interface IBasketItem {
   type: string;
 }
 
+export interface IBasketTotals {
+  shipping: number;
+  subtotal: number;
+  total: number;
+}
+
 // uuid - it will create a unique identifier for each item in the shopping cart
 export class Basket implements IBasket {
-    id = uuidv4();
-    items: IBasketItem[] = [];
+  id = uuidv4();
+  items: IBasketItem[] = [];
 
 }

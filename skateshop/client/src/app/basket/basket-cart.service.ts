@@ -1,4 +1,4 @@
-import { Basket, IBasketItem } from './../shared/models/basket';
+import { Basket, IBasketItem, IBasketTotals } from './../shared/models/basket';
 import { IProduct } from './../shared/models/product';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
@@ -12,8 +12,10 @@ import { IBasket } from '../shared/models/basket';
 })
 export class BasketCartService {
   baseUrl = environment.apiUrl;
-  private basketSource = new BehaviorSubject<IBasket>(null);
-  basket$ = this.basketSource.asObservable();
+  private cartSource = new BehaviorSubject<IBasket>(null);
+  basket$ = this.cartSource.asObservable();
+  private cartTotalSource = new BehaviorSubject<IBasketTotals>(null);
+  cartTotal$ = this.cartTotalSource.asObservable();
 
   constructor(private http: HttpClient) { }
 
@@ -21,23 +23,23 @@ export class BasketCartService {
     return this.http.get(this.baseUrl + 'basket?id=' + id)
       .pipe(
         map((basket: IBasket) => {
-          this.basketSource.next(basket);
-          console.log(this.getCurrentBasketValue());
+          this.cartSource.next(basket);
+          this.calculateCartTotals();
         })
       )
   }
 
   setBasket(basket: IBasket) {
     return this.http.post(this.baseUrl + 'basket', basket).subscribe((res: IBasket) => {
-      this.basketSource.next(res);
-      console.log(res);
+      this.cartSource.next(res);
+      this.calculateCartTotals();
     }, error => {
       console.log(error);
     })
   }
 
   getCurrentBasketValue() {
-    return this.basketSource.value;
+    return this.cartSource.value;
   }
 
   addItemToBasket(item: IProduct, quantity = 1) {
@@ -45,6 +47,17 @@ export class BasketCartService {
     const basket = this.getCurrentBasketValue() ?? this.createBasket();
     basket.items = this.addOrUpdateItem(basket.items, itemToAdd, quantity);
     this.setBasket(basket);
+  }
+
+  private calculateCartTotals () {
+    const basket = this.getCurrentBasketValue();
+    const shipping = 0;
+    // Using 'reduce' array method to add up all the subtotals of each product in shopping cart
+    const subtotal = basket.items.reduce((result, item) => (item.price * item.quantity) + result, 0);
+    const total = subtotal + shipping;
+
+    this.cartTotalSource.next({shipping, total, subtotal});
+
   }
 
   // Helper private function to Add or Update current items in Shopping Cart
